@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "5a59157abb3fb10014e616f2",
+        "name": "Amazon",
+        "price": 12345,
+        "__v": 0
+    },
+    {
+        "_id": "5a591a3e3aefec35104ef913",
+        "name": "Please insert the data",
+        "price": 10,
+        "__v": 0
+    },
+    {
+        "_id": "5a5922924562084c7c54630c",
+        "name": "souls",
+        "price": 10,
+        "__v": 0
+    },
+    {
+        "_id": "5a59272bc5157c488c5a7eb0",
+        "name": "demon",
+        "price": 10,
+        "__v": 0
+    }
+]

@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-10">
+
+
+    <!-- <app-itemedit></app-itemedit> -->
+    
+<nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <!-- add header -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" href="#">Shop</a>
+                </div>
+                <!-- add menu -->
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <!-- <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li> -->
+                    </ul>
+
+                    <!-- add search form -->
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="input-group">
+                          <span class="glyphicon glyphicon-search"></span>
+
+                            
+                            <input 
+                           
+                            class="form-control" placeholder="Your search starts here" >
+                              
+
+                           
+                         
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+           <ul *ngIf="results">
+                                <li *ngFor="let result of results | slice:0:9">
+                                    <a href="{{ result.latest }}" target="_blank">
+      {{ result.name }}
+    </a>
+                                </li>
+                            </ul>
+
+   
+
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of items">
+        <a> {{item.name}}  {{item.capacity}}</a>
+
+      </li>
+    </ul>
+
+
+
+    <button class="btn btn-primary" (click)="onSort()">Sort items By Price</button>
+
+
+  </div>
+
+
+  <br><br>
+</div>
